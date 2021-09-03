@@ -175,8 +175,7 @@ header {
     align-content: center;
     margin-bottom: 20px;
 }
-/* ADDED to add border-bottom dotted for styling on about */
-.text-container-dotted { 
+.text-container-dotted { /* ADDED to add border-bottom dotted for styling on about */
     width: 48%;
     padding: 0 1% 30px 0;  
     border-bottom: 1px dashed black;
