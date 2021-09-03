@@ -47,9 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+
+/* UNIVERSAL & GENERAL */
 * {
     box-sizing: border-box;
-    border: 1px solid gray;
+    max-width: 100%;
+    /* border: 1px solid gray; */      /* BORDER LINE HERE*/
 }
 
 html, body {
@@ -71,6 +74,9 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+a {
+    text-decoration: none;
+}
 
 
 /* HEADER */
@@ -78,7 +84,7 @@ header {
     margin: 20px 0;
 }
 #logo-nav {
-    margin: 0 0 3% 0;
+    margin: 0 0 4% 0;
     display: flex;
     /* border: 5px dashed orange; */
 }
@@ -93,9 +99,6 @@ header {
     justify-content: space-around;
     align-items: flex-end;
 }
-#logo-nav a {
-    text-decoration: none;
-}
 
 
 /* TOP */
@@ -106,7 +109,6 @@ header {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
@@ -170,6 +172,39 @@ header {
 }
 .box:nth-child(10) {
     background: dodgerblue;
+}
+
+
+/* ABOUT PAGE */
+.text-container-full { /* ADDED to removed width of 48% */
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+.how-content {  /* ADDED to remove border-bottom dotted */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 20px;
+}
+.text-container-dotted { /* ADDED to add border-bottom dotted */
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 30px;  
+    border-bottom: 1px dashed black; /* ADD DOTTED LINE UNDER EACH*/
+    /* ======= MAKE THIS A FLEX CONTAINER? ==========  */
+}
+.text-container-dotted h2 {
+    padding-top: 10px; 
+}
+.text-container-dotted p {
+    padding-bottom: 40px; 
+}
+.text-container-dotted a {
+    border: 2px solid black;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: black;
 }
 
 
